@@ -70,12 +70,14 @@ p {
     color: #fff;
     background-color: var(--strong-cyan);
     box-shadow: 0 8px 16px 0 rgba(9, 196, 149, 0.2);
+    margin-right: 10px;
 }
 
 .mac{
     color: #fff;
     background-color: var(--light-blue);
     box-shadow: 0 8px 16px 0 rgba(82, 43, 221, 0.2);
+    margin-left: 10px;
 }
 
 .btn:hover {
@@ -88,34 +90,37 @@ p {
     transform: translateY(4px);
 }
 
-/****************************************** flexbox image (snippets) ***************************************/
-.flex {
-    display: flex;
-    place-items: center;
-    text-align: center;
-    grid-gap: 60px;
-}
+/****************************************** (snippets) ***************************************/
+.features {
+    display: grid;
+    height: 700px;
+    align-content: space-around;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+  }
 
 .feature-text {
     margin-bottom: 30px;
     text-align: left;
-    width: 80%
+    width: 60%
 }
 
 .feature-image img {
-    width: 80%;
-    margin-top: 30px;
+    width: 70%;
 }
 
 /********************************************Supercharge your workflow************************************************/
 .iconsflex {
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 70%;
     margin: auto;
     align-content: space-around;
     gap: 30px;
-    padding-bottom: 80px;
+    padding-bottom: 150px;
+    padding-top: 80px;
 }
 
 .icon {
@@ -123,10 +128,16 @@ p {
 }
 
 .companies {
-    display: flex;
-    justify-content: space-around;
-    align-self: center;
-    
+    display: grid;
+    align-content: space-around;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 80px;
+    padding-bottom: 80px;
+    justify-content: center;
+}
+
+.padding_space {
+    padding-bottom: 100px;
 }
 
 /************************************************ Footer *******************************************************************/
