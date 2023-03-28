@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+--strong-cyan: hsl(171, 66%, 44%);
+--light-blue: hsl(233, 100%, 69%);
+--dark-grayish-blue: hsl(210, 10%, 33%);
+--grayish-blue: hsl(201, 11%, 66%);
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;   
+    color: var(--dark-grayish-blue);
+    text-align: center;
+}
+
+header {
+    background-image: url(images/bg-header-desktop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    padding: 10px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--grayish-blue);
+    padding-top: 20px;
+    width: min(90%, 35rem);
+    margin: auto;
+}
+
+.heading {
+    margin: 0 auto;
+    padding-top: 30px;
+    place-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/***************************************** button ******************************************/
+.btn {
+    border: none;
+    padding: 1rem 2.5rem;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 1rem;
+}
+
+.ios {
+    color: #fff;
+    background-color: var(--strong-cyan);
+    box-shadow: 0 8px 16px 0 rgba(9, 196, 149, 0.2);
+    margin-right: 10px;
+}
+
+.mac{
+    color: #fff;
+    background-color: var(--light-blue);
+    box-shadow: 0 8px 16px 0 rgba(82, 43, 221, 0.2);
+    margin-left: 10px;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: var(--grayish-blue);
+    box-shadow: 0 9px #999;
+  }
+
+.btn:active {
+    transform: translateY(4px);
+}
+
+/****************************************** (snippets) ***************************************/
+.features {
+    display: grid;
+    height: 700px;
+    align-content: space-around;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+  }
+
+.feature-text {
+    margin-bottom: 30px;
+    text-align: left;
+    width: 60%
+}
+
+.feature-image img {
+    width: 80%;
+}
+
+.features p {
+    margin-left: 0%;
+}
+
+/********************************************Supercharge your workflow************************************************/
+.iconsflex {
+    margin: 5%;
+}
+
+.icon_container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 50px;
+    margin: 5%;
+}
+
+.icon {
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.companies {
+    display: grid;
+    align-content: space-around;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 80px;
+    margin: 5%;
+    padding: 30px;
+    justify-content: center;
+}
+
+.padding_space {
+    padding-bottom: 100px;
+}
+
+/************************************************ Footer *******************************************************************/
+.footer {
+    background-color: #f6f6fe;
+    padding-block: 3rem;
+  }
+  
+  .footer .wrapper {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+  }
+  
+  .footer .socials {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+  }
+  
+  .footer .socials img {
+    display: block;
+  }
+
+  .footer .footer-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    cursor: pointer;
+  }
+  
+  .footer .footer-links img {
+    width: 50px;
+    align-self: center;
+  }
+  
+  .footer .footer-links div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .footer-links a{
+    text-decoration: none;
+    color: var(--grayish-blue);
+  }
+  
+  .footer-links a:hover{
+    color: hsl(171, 66%, 44%);
+  }
