@@ -26,44 +26,46 @@ header {
 
 h1 {
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 10px;
 }
 
 h2 {
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
 h3 {
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bolder;
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 150%;
     color: var(--grayish-blue);
     padding-top: 20px;
+    width: min(90%, 35rem);
+    margin: auto;
 }
 
 .heading {
     margin: 0 auto;
-    width: 60%;
     padding-top: 30px;
     place-items: center;
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 /***************************************** button ******************************************/
 .btn {
     border: none;
-    padding: 13px 20px;
+    padding: 1rem 2.5rem;
     display: inline-block;
     cursor: pointer;
     border-radius: 20px;
+    margin-top: 1rem;
 }
 
 .ios {
@@ -108,23 +110,29 @@ p {
 }
 
 .feature-image img {
-    width: 70%;
+    width: 80%;
+}
+
+.features p {
+    margin-left: 0%;
 }
 
 /********************************************Supercharge your workflow************************************************/
 .iconsflex {
-    display: flex;
-    justify-content: center;
-    width: 70%;
-    margin: auto;
-    align-content: space-around;
-    gap: 30px;
-    padding-bottom: 150px;
-    padding-top: 80px;
+    margin: 5%;
+}
+
+.icon_container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 50px;
+    margin: 5%;
 }
 
 .icon {
-    padding-bottom: 20px;
+    height: 40px;
+    margin-bottom: 20px;
 }
 
 .companies {
@@ -132,7 +140,8 @@ p {
     align-content: space-around;
     grid-template-columns: auto auto auto auto auto;
     gap: 80px;
-    padding-bottom: 80px;
+    margin: 5%;
+    padding: 30px;
     justify-content: center;
 }
 
@@ -141,27 +150,57 @@ p {
 }
 
 /************************************************ Footer *******************************************************************/
-footer {
-    padding: 5px;
-    background-color: #f5f6f8a6;
-}
-
-.footer-wrap {
+.footer {
+    background-color: #f6f6fe;
+    padding-block: 3rem;
+  }
+  
+  .footer .wrapper {
+    width: 80%;
     display: flex;
-    justify-content: space-around;
-    place-items: center;
-}
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+  }
+  
+  .footer .socials {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+  }
+  
+  .footer .socials img {
+    display: block;
+  }
 
-.footer-logo img {
-    height: 60px;
-    padding: 10px;
-}
-
-
-.footer-item p {
+  .footer .footer-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
     cursor: pointer;
-}
+  }
+  
+  .footer .footer-links img {
+    width: 50px;
+    align-self: center;
+  }
+  
+  .footer .footer-links div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 
-.footer-item p:hover {
+  .footer-links a{
+    text-decoration: none;
+    color: var(--grayish-blue);
+  }
+  
+  .footer-links a:hover{
     color: hsl(171, 66%, 44%);
-}
+  }
