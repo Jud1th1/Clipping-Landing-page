@@ -16,14 +16,6 @@ body {
     text-align: center;
 }
 
-header {
-    background-image: url(images/bg-header-desktop.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 80px 0;
-}
-
 h1 {
     font-weight: 600;
     font-size: 3rem;
@@ -50,6 +42,18 @@ p {
     margin: auto;
 }
 
+
+header {
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+img{
+    max-width: 100%;
+}
+
 .heading {
     margin: 0 auto;
     padding-top: 30px;
@@ -65,30 +69,26 @@ p {
     display: inline-block;
     cursor: pointer;
     border-radius: 20px;
-    margin-top: 1rem;
+    margin: 1em;
 }
 
 .ios {
     color: #fff;
     background-color: var(--strong-cyan);
+}
+
+.ios:hover {
     box-shadow: 0 8px 16px 0 rgba(9, 196, 149, 0.2);
-    margin-right: 10px;
+    transform: translateY(4px);
 }
 
 .mac{
     color: #fff;
-    background-color: var(--light-blue);
-    box-shadow: 0 8px 16px 0 rgba(82, 43, 221, 0.2);
-    margin-left: 10px;
+    background-color: var(--light-blue); 
 }
 
-.btn:hover {
-    color: #fff;
-    background-color: var(--grayish-blue);
-    box-shadow: 0 9px #999;
-  }
-
-.btn:active {
+.mac:hover{
+    box-shadow: 0 8px 16px 0 rgba(82, 43, 221, 0.2);
     transform: translateY(4px);
 }
 
@@ -204,3 +204,55 @@ p {
   .footer-links a:hover{
     color: hsl(171, 66%, 44%);
   }
+
+ /************************************************ Media *******************************************************************/
+ @media screen and (max-width: 350px) {
+    .features {
+        display: unset;
+      }
+
+    .feature-list{
+        padding: 3%;
+    }
+
+    .feature-image{
+        margin: 5%;
+    }
+
+    .feature-text{
+        text-align: center;
+        width: 100%;
+    }
+
+    .icon_container {
+        display: unset;
+    }
+
+    .wrkflow{
+        margin: 10%;
+    }
+
+    .companies{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-row-gap: 50px;
+        align-items: center;
+    }
+
+    .footer .footer-links{
+        display: block;
+        justify-content: space-between;
+        text-align: center;
+        padding: 1em;
+    }
+
+    .wrapper{
+        align-items: center;
+        padding-left: 20%;
+    }
+
+    .footer-links{
+        padding: 3em;
+    }
+  }
+
